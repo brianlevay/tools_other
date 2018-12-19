@@ -1,0 +1,35 @@
+body {
+    position: relative;
+    font-family: Arial, sans-serif;
+}
+
+h1 {
+    text-align: center;
+}
+
+.filterType {
+    display: inline-block;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.inputYr {
+    width: 80px;
+}
+
+.inputDay {
+    width: 50px;
+}
+
+.tooltip {
+    position: absolute;
+    border: 1px solid grey;
+    border-radius: 3px;
+    box-shadow: 1px 1px grey;
+    padding: 5px;
+    background-color: white;
+}
+
+.chartTitle {
+    font-size: 2em;
+}

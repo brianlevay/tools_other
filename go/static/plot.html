@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <title>Standards Intensity</title>
+        <link rel="stylesheet" href="plot.css">
+    </head>
+    <body>
+        <h1>Plot of Standards Intensities Through Time</h1>
+        <section id="filterSect">
+            <div>
+                <span class="filterType">Conditions:</span>
+                <label>kVp</label>
+                <select id="list_kVp"></select>
+                <label>mA</label>
+                <select id="list_mA"></select>
+            </div>
+            <div>
+                <span class="filterType">Start Date:</span>
+                <label>Year</label>
+                <input class="inputYr" id="start_Yr"></input>
+                <label>Month</label>
+                <select id="start_Mo">
+                    <option value=0>January</option>
+                    <option value=1>February</option>
+                    <option value=2>March</option>
+                    <option value=3>April</option>
+                    <option value=4>May</option>
+                    <option value=5>June</option>
+                    <option value=6>July</option>
+                    <option value=7>August</option>
+                    <option value=8>September</option>
+                    <option value=9>October</option>
+                    <option value=10>November</option>
+                    <option value=11>December</option>
+                </select>
+                <label>Day</label>
+                <input class="inputDay" id="start_Day"></input>
+            </div>
+            <div>
+                <span class="filterType">End Date:</span>
+                <label>Year</label>
+                <input class="inputYr" id="end_Yr"></input>
+                <label>Month</label>
+                <select id="end_Mo">
+                    <option value=0>January</option>
+                    <option value=1>February</option>
+                    <option value=2>March</option>
+                    <option value=3>April</option>
+                    <option value=4>May</option>
+                    <option value=5>June</option>
+                    <option value=6>July</option>
+                    <option value=7>August</option>
+                    <option value=8>September</option>
+                    <option value=9>October</option>
+                    <option value=10>November</option>
+                    <option value=11>December</option>
+                </select>
+                <label>Day</label>
+                <input class="inputDay" id="end_Day"></input>
+            </div>
+            <div>
+                <button id="updateBtn" onclick="setFilters()">Update Filters</button>
+            </div>
+        </section>
+        <section id="plotSect"></section>
+        <section id="errorSect"></section>
+        <script src="d3.min.js"></script>
+        <script src="plot.js"></script>
+    </body>
+</html>
